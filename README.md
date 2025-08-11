@@ -6,7 +6,7 @@ This tool allows you to load a 3D room model, place multiple sources and receive
 
 ---
 \
-![GUI](https://github.com/[whojavumusic]/[GPU-ARIR]/blob/main/gui.jpg?raw=true)
+![GUI](https://github.com/whojavumusic/GPU-ARIR/blob/main/gui.jpg)
 
 ---
 
