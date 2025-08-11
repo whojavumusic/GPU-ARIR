@@ -5,8 +5,8 @@ GPU/CUDA-based Ambisonics Impulse Response (AIR) Generator for 3D models using a
 This tool allows you to load a 3D room model, place multiple sources and receivers in 3D space, and simulate high-order Ambisonics Room Impulse Responses using GPU-accelerated ray tracing. The included GUI makes it easy to visualize and interact with your geometry, set simulation parameters, and instantly plot results.
 
 ---
-
-![alt text]([https://github.com/whojavumusic/GPU-ARIR/blob/main/gui.png])
+\
+![GUI](https://github.com/[whojavumusic]/[GPU-ARIR]/blob/main/gui.jpg?raw=true)
 
 ---
 
