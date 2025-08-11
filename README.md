@@ -1,5 +1,4 @@
 # GPU/CUDA-based Ambisonics Impulse Response Generator
-**Description:**  
 GPU/CUDA-based Ambisonics Impulse Response (AIR) Generator for 3D models using a physically-based Ray Tracing algorithm.
 
 This tool allows you to load a 3D room model, place multiple sources and receivers in 3D space, and simulate high-order Ambisonics Room Impulse Responses using GPU-accelerated ray tracing. The included GUI makes it easy to visualize and interact with your geometry, set simulation parameters, and instantly plot results.
@@ -28,6 +27,10 @@ This tool allows you to load a 3D room model, place multiple sources and receive
 
 ---
 
+- The backend utilizes GSoundSIR's RayDataPipeline for the core geometric acoustic simulation, which generates essential ray data like listener directions, intensities, and time delays. It then calculates Higher Order Ambisonic (HOA) Impulse Responses using complex spherical harmonics computations and time-frequency processing, incorporating properties like time delays, intensities, and listener directions.
+
+---
+  
 ## How It Works
 
 1. **Load a 3D Model**  
@@ -55,6 +58,55 @@ This tool allows you to load a 3D room model, place multiple sources and receive
 - **Operating System**: Linux only (CUDA support required for GPU acceleration).
 - **Python**: 3.9+
 - **NVIDIA GPU** with CUDA Toolkit installed.
+
+
+## Related Works
+Currently the dataset generated using the process is in progress (https://github.com/whojavumusic/hifi-harp). The dataset can be used as plug-and-play making it easier for the researchers.
+
+Earlier version of the dataset (with PyRoomAcoustics) is available at: https://github.com/whojavumusic/HARP and can be cited as: 
+
+@inproceedings{saini2025harp,
+  title={HARP: A Large-Scale Higher-Order Ambisonic Room Impulse Response Dataset},
+  author={Saini, Shivam and Peissig, Juergen},
+  booktitle={2025 IEEE International Conference on Acoustics, Speech, and Signal Processing Workshops (ICASSPW)},
+  pages={1--5},
+  year={2025},
+  organization={IEEE}
+}
+
+This tool is built with the help of GSound, PyGSound and GSound-SIR, please cite the respective authors as follows.
+
+@inproceedings{schissler2011gsound,
+  title={Gsound: Interactive sound propagation for games},
+  author={Schissler, Carl and Manocha, Dinesh},
+  booktitle={Audio Engineering Society Conference: 41st International Conference: Audio for Games},
+  year={2011},
+  organization={Audio Engineering Society}
+}
+
+@article{schissler2017interactive,
+  title={Interactive sound propagation and rendering for large multi-source scenes},
+  author={Schissler, Carl and Manocha, Dinesh},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={36},
+  number={1},
+  pages={2},
+  year={2017},
+  publisher={ACM}
+}
+
+@misc{zang2025gsoundsirspatialimpulseresponse,
+      title={GSound-SIR: A Spatial Impulse Response Ray-Tracing and High-order Ambisonic Auralization Python Toolkit}, 
+      author={Yongyi Zang and Qiuqiang Kong},
+      year={2025},
+      eprint={2503.17866},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD},
+      url={https://arxiv.org/abs/2503.17866}, 
+}
+
+
+
 
 ### Dependencies
 
