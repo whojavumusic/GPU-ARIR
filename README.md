@@ -6,6 +6,10 @@ This tool allows you to load a 3D room model, place multiple sources and receive
 
 ---
 
+![alt text]([http://url/to/img.png](https://github.com/whojavumusic/GPU-ARIR/blob/main/gui.png))
+
+---
+
 ## Features
 
 - **GPU-accelerated ray tracing** for fast simulation of sound propagation in complex 3D spaces.
